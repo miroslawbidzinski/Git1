@@ -1,4 +1,8 @@
-body { background: #fafafa; font-family: "Arial", helvetica, sans-serif; font-size: 10pt; font-weight: normal; }
+body { background: mediumaquamarine; 
+    font-family: "Arial", helvetica, sans-serif; 
+    font-size: 10pt; font-weight: normal; 
+    color: #000;
+}
 
 p { background: aqua; }
 
