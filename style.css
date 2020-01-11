@@ -1,0 +1,9 @@
+body { background: #fafafa; font-family: "Arial", helvetica, sans-serif; font-size: 10pt; font-weight: normal; }
+
+p { background: aqua; }
+
+#container { width:100%; display: flex; flex-direction: row;}
+
+main { width: 70%; height:auto; background:#ccc;}
+aside { width: 30%; height:auto; background:#f00;}
+footer {width: 100%; height:auto; }
