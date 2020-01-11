@@ -1,13 +1,45 @@
-body { background: mediumaquamarine; 
+* {
+    box-sizing: border-box;
+}
+body { 
+    background: #000; 
     font-family: "Arial", helvetica, sans-serif; 
     font-size: 10pt; font-weight: normal; 
-    color: #000;
+    color: #fff;
+    margin:0;
+    padding:0;
+    counter-reset:0;
+
 }
 
-p { background: aqua; }
+.card {
+    counter-increment: card-number;
+}
 
-#container { width:100%; display: flex; flex-direction: row;}
+.card_number::before {
+    font-weight: bold;
+    font-size: 30px;
+    content: counter(card-number);
+}
 
-main { width: 70%; height:auto; background:#ccc;}
-aside { width: 30%; height:auto; background:#f00;}
-footer {width: 100%; height:auto; }
+.card{
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    margin:10px;
+
+}
+.card::nth-child(1) {
+    background: yellow;
+}
+.card::nth-child(2) {
+    background: red;
+}
+.card::nth-child(3) {
+    background: green;
+}
+/* #container { width:100%; display: flex; flex-direction: row;}
+main { width: 70%; height:auto; background:rgb(39, 172, 39);}
+aside { width: 30%; height:auto; background:blue;}
+footer {width: 100%; height:auto; } */
+
